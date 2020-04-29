@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:ems="6"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_import_contacts_black_24dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Type"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="duration"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/ic_favorite_border_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
